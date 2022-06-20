@@ -6,108 +6,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="viktor, cv, resume">
     <meta name="description" content="Это сайт-резюме Виктора Чикова">
+    <link rel="stylesheet" href="styles.css">
     <title>Viktor Resume</title>
 </head>
 <body>
-    <h1>
-        <img src="imgs/foto.jpg" width="200" alt="Виктор Чиков">
-    </h1>
 
-    <h1>Виктор Чиков</h1>
-    
-    <p>Я начинающий <strong>Frontend-разработчик</strong>.</p>
-    <p>Я люблю развиваться <em>всесторонне</em>, как физически (<em>занимаюсь спортом</em>), 
-    так и интеллектуально (<em>прохожу курсы, образовательные программы</em>).</p>
+    <div class="container">
+        <div class="info">
 
-    <h4>Список социальных сетей:</h4>
+                <img src="imgs/foto.jpg" alt="Виктор Чиков" class="foto">
 
-    <a href="https://t.me/viktor_cva" target="_blank">Telegram</a>
+            <div class="info-text">
+                <h1>Виктор Чиков</h1>
+                
+                <p>Я начинающий <strong>Frontend-разработчик</strong>.</p>
+                <p>Я люблю развиваться <em>всесторонне</em>, как физически (<em>занимаюсь спортом</em>), 
+                так и интеллектуально (<em>прохожу курсы, образовательные программы</em>).</p>
 
-    <a href="https://wa.me/79061039029" target="_blank">WhatsApp</a>
+                <h4>Список социальных сетей:</h4>
 
-    <h2>Мои хобби</h2>
+                <a href="https://t.me/viktor_cva" target="_blank">Telegram</a>
 
-    <ol>
-        <li>
-            Заниятия спортом:
-            <ul>
-                <li>Гимнастика</li>
-                <li>Бег</li>
-                <li>Плавание</li>
-            </ul>
-        </li>
-        <li>Программирование</li>
-        <li>Изучение английского языка</li>
-        <li>
-            Выезды на природу:
-            <ul>
-                <li>Подъем в горы</li>
-                <li>Сплавы по рекам</li>
-                <li>Походы</li>
-            </ul>
-        </li>
-    </ol>
+                |
 
-    <h2>Опыт работы</h2>
+                <a href="https://wa.me/79061039029" target="_blank">WhatsApp</a>
+            </div>
 
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-                <th>Приобретенный опыт, навыки</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>ООО "Промгражданпроект"</td>
-                <td>Техник, инженер, зам.нач.отдела</td>
-                <td>2007-2012</td>
-                <td>Опыта работы как в офисе, так и на строительных площадках, запускаемых
-                    производствах, опыт руководства коллективом</td>
-            </tr>
-            <tr>
-                <td>Филиал "Уфагипротрубопровод" АО "Гипротрубопровод"</td>
-                <td>Инженер 1 категории</td>
-                <td>2012-2017</td>
-                <td>Опыта разработки и ведения проектов инженерного направления</td>
-            </tr>
-            <tr>
-                <td>Филиал "Уфагипротрубопровод" АО "Гипротрубопровод"</td>
-                <td>Руководитель группы</td>
-                <td>2017-2021</td>
-                <td>Опыт руководства коллективом, опыт взаимодействия с различными подразделениями, выработка технических решений по
-                    заданиям от заказчика, выполнение полного цикла проекта</td>
-            </tr>
-            <tr>
-                <td>Outsourcing project developer</td>
-                <td>Специалист по выполнению полного цикла проекта</td>
-                <td>2021-сегодня</td>
-                <td>Выполнение полного цикла проекта</td>
-            </tr>
-        </tbody>
-    </table>
+        </div>
 
-    <h2>Связаться со мной</h2>
+        <div class="card">
+            <div class="card bg-yellow">
+                <h2 class="my-hobby">Мои хобби</h2>
 
-    <div>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите имя">
+                <ol class="hobby-text list">
+                    <li>
+                        Заниятия спортом:
+                        <ul>
+                            <li>Гимнастика</li>
+                            <li>Бег</li>
+                            <li>Плавание</li>
+                        </ul>
+                    </li>
+                    <li>Программирование</li>
+                    <li>Изучение английского языка</li>
+                    <li>
+                        Выезды на природу:
+                        <ul>
+                            <li>Подъем в горы</li>
+                            <li>Сплавы по рекам</li>
+                            <li>Походы</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="card bg-red">
+                <h2>Опыт работы</h2>
+
+                <table class="table-work">
+                    <thead>
+                        <tr>
+                            <th>Название</th>
+                            <th>Должность</th>
+                            <th>Год</th>
+                            <th>Приобретенный опыт, навыки</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ООО "Промгражданпроект"</td>
+                            <td>Техник, инженер, зам.нач.отдела</td>
+                            <td>2007-2012</td>
+                            <td>Опыта работы как в офисе, так и на строительных площадках, запускаемых
+                                производствах, опыт руководства коллективом</td>
+                        </tr>
+                        <tr>
+                            <td>Филиал "Уфагипротрубопровод" АО "Гипротрубопровод"</td>
+                            <td>Инженер 1 категории</td>
+                            <td>2012-2017</td>
+                            <td>Опыта разработки и ведения проектов инженерного направления</td>
+                        </tr>
+                        <tr>
+                            <td>Филиал "Уфагипротрубопровод" АО "Гипротрубопровод"</td>
+                            <td>Руководитель группы</td>
+                            <td>2017-2021</td>
+                            <td>Опыт руководства коллективом, опыт взаимодействия с различными подразделениями, выработка технических решений по
+                                заданиям от заказчика, выполнение полного цикла проекта</td>
+                        </tr>
+                        <tr>
+                            <td>Outsourcing project developer</td>
+                            <td>Специалист по выполнению полного цикла проекта</td>
+                            <td>2021-сегодня</td>
+                            <td>Выполнение полного цикла проекта</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card bg-green">
+                <h2>Образование</h2>
+
+                <table class="table">
+                    <head>
+                        <tr>
+                            <th>Наименование</th>
+                            <th>Специализация</th>
+                            <th>Год</th>
+                        </tr>
+                    </head>
+
+                    <tr>
+                        <td>Уфимский государственный авиационный технический
+                            университет, Уфа</td>
+                        <td>Инженер-энергетик</td>
+                        <td>2011</td>
+                    </tr>
+                    <tr>
+                        <td>ФГБОУ БО "Тульский государственный педагогический
+                            университет им Л.Н.Толстого"</td>
+                        <td>Web-разработчик, Web-дизайнер</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr>
+                        <td>Учебный центр "ЗАМАН"</td>
+                        <td>HTML5, CSS3, верстка</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr>
+                        <td>Онлайн-университет SkillBox</td>
+                        <td>Java разработчик</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr>
+                        <td>Result School</td>
+                        <td>Front End Developer</td>
+                        <td>2022</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- <div class="card bg-green form"></div> -->
+            <div class="form">
+                <h2>Связаться со мной</h2>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Ваше сообщение:</label>
+                    <br>
+                    <textarea id="message" cols="20" rows="10" placeholder="Введите сообщение"></textarea>
+                </div>
+
+                <button type="submit" class="btn">Отправить!</button>
+            </div>
+        </div>
     </div>
-
-    <div>
-        <label for="email">Ваш email:</label>
-        <input type="email" id="email" placeholder="Введите email">
-    </div>
-
-    <div>
-        <label for="message">Ваше сообщение:</label>
-        <br>
-        <textarea id="message" cols="20" rows="10" placeholder="Введите сообщение"></textarea>
-    </div>
-
-    <button type="submit">Отправить!</button>
 
 </body>
 </html>
